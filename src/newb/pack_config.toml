@@ -1,15 +1,14 @@
-name = "Newb X Legacy"
-version = [0, 15, 0]
+name = "Newb X Memories: build 2.0"
+version = [0, 2, 0]
 min_supported_mc_version = [1, 21, 20]
 description = '''
 §c%w
-§7- An enchanced vanilla shader for Minecraft!
+§7- §lNewb x Memories §fis a brighted & beautiful shader built by §2OVENIX :)
 %v
-§3https://devendrn.github.io/newb-shader/
 ''' # %w = patch warning, %v = version
-authors = ["devendrn"]
+authors = ["Ovenix" , "deven"]
 url = "https://devendrn.github.io/newb-shader/"
-uuid = "95f774cf-4afa-73e7-a21a-72146307b1d2" # Use https://www.uuidgenerator.net/version4
+uuid = "abe52eeb-2c15-4187-9c05-8f48198405c4" # Use https://www.uuidgenerator.net/version4
 materials = ["Sky", "LegacyCubemap", "Clouds", "EndSky", "SunMoon", "RenderChunk", "Weather", "Actor"]
 
 [info] 
@@ -25,50 +24,50 @@ credits = '''
 # right-most subpack is enabled by default
 
 [[subpack]]
-define = "ROUNDED_CLOUDS"
+define = "AROURA_SETTINGS"
 materials = ["Clouds"]
 description = '''
-Rounded Clouds
+§6the most lowest§f lag (newb x legacy Aroura default settings) to reduce the lag §6for the weakest devices for NewB X Memories §b- §lRestart for the best experience!
 '''
 
 [[subpack]]
-define = "BOX_CLOUDS"
-materials = ["Clouds", "RenderChunk"]
+define = "SOFT_CLOUDS"
+materials = ["Clouds"]
 description = '''
-Box Clouds
+Aurora Reflection Lowest Settings for NewB X Memories§f §b- §lRestart for the best experience
 '''
 
 [[subpack]]
-define = "CHUNK_ANIM"
+define = "VANILLA_WATER_STYLE"
+materials = ["Clouds"]
+description = '''
+Change §9the water to vanilla enchanced looks Settings for NewB X Memories §b- §lRestart for the best experience!
+'''
+
+[[subpack]]
+define = "BLINKING_TORCH"
 materials = ["RenderChunk"]
 description = '''
-Chunk loading animation
+Enable Blinking §6Torch§f Feature Settings for NewB X Memories §b- §lRestart for the best experience!
 '''
 
 [[subpack]]
-define = "NO_WAVE_NO_FOG"
-materials = ["RenderChunk"]
+define = "BRIGHT_BLUE_SKY"
+materials = ["Clouds" , "LegacyCubemap" , "RenderChunk" , "Sky"]
 description = '''
-No fog and wave effects
+Change Night sky to more §3bright for NewB X Memories §b- §lRestart for the best experience!
 '''
 
 [[subpack]]
-define = "NO_FOG"
-materials = ["RenderChunk"]
+define = "CLOUDS_EXTENSION"
+materials = ["Clouds"]
 description = '''
-No fog effect
-'''
-
-[[subpack]]
-define = "NO_WAVE"
-materials = ["RenderChunk"]
-description = '''
-No wave effects
+Enable Multilayer Rounded Clouds (Cost lot performance)§6High Settings §ffor NewB X Memories §b- §lRestart for the best experience!
 '''
 
 [[subpack]]
 define = "DEFAULT"
 materials = []
 description = '''
-Default
+§lDefault
 '''
