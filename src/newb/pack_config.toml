@@ -1,5 +1,5 @@
-name = "Newb X Memories: build 2.9"
-version = [0, 2, 9]
+name = "Newb X Memories: build 3.0"
+version = [0, 3, 0]
 min_supported_mc_version = [1, 21, 20]
 description = '''
 §c%w
@@ -24,8 +24,15 @@ credits = '''
 # right-most subpack is enabled by default
 
 [[subpack]]
+define = "RAINBOW"
+materials = ["Sky"]
+description = '''
+Enable the §bRainbow§f for NewB X Memories §l- §bRestart for the best experience
+'''
+
+[[subpack]]
 define = "SOFT_CLOUDS"
-materials = ["RenderChunk"]
+materials = ["Clouds"]
 description = '''
 Soft Cloud Aurora Reflection (§eLowest§f) Settings for NewB X Memories §l- §bRestart for the best experience
 '''
