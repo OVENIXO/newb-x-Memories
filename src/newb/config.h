@@ -28,7 +28,7 @@
 */
 
 /* Color correction */ 
-#define NL_TONEMAP_TYPE 3            // 1:Exponential, 2:Reinhard, 3:Extended Reinhard, 4:ACES
+#define NL_TONEMAP_TYPE 4            // 1:Exponential, 2:Reinhard, 3:Extended Reinhard, 4:ACES
 #define NL_CONTRAST 0.718             // 0.3 low ~ 2.0 high
 #define NL_EXPOSURE 1.7            // [toggle] 0.5 dark ~ 3.0 bright
 #define NL_SATURATION 1.221          // [toggle] 0.0 grayscale ~ 4.0 super saturated
@@ -72,7 +72,7 @@
 #define NL_RAIN_HORIZON_COL  vec3(1.0,1.0,1.0)
 #define NL_END_ZENITH_COL    vec3(0.071,0.008,0.09)
 #define NL_END_HORIZON_COL   vec3(0.451,0.122,0.569)
-#define NL_DAWN_ZENITH_COL   vec3(0.015,0.045,0.1)
+#define NL_DAWN_ZENITH_COL   vec3(0.251,0.792,0.902)
 #define NL_DAWN_HORIZON_COL  vec3(0.87,0.37,0.97)
 #define NL_DAWN_EDGE_COL     vec3(0.57,0.4,1.0 )
 
@@ -84,10 +84,10 @@
 /* Ore glow intensity */ 
 #define NL_GLOW_TEX 4.0    // 0.4 weak ~ 8.0 bright
 #define NL_GLOW_SHIMMER    // [toggle] shimmer effect
-//#define NL_GLOW_LEAK 0.6 // [toggle] 0.08 subtle ~ 1.0 100% brightness of NL_GLOW_TEX
+//#define NL_GLOW_LEAK 0.9 // [toggle] 0.08 subtle ~ 1.0 100% brightness of NL_GLOW_TEX
 
 /* Waving */ 
-#define NL_PLANTS_WAVE 0.1    // [toggle] 0.02 gentle ~ 0.4 violent
+#define NL_PLANTS_WAVE 0.05    // [toggle] 0.02 gentle ~ 0.4 violent
 #define NL_LANTERN_WAVE 0.16   // [toggle] 0.05 subtle ~ 0.4 large swing
 #define NL_WAVE_SPEED 2.8      // 0.5 slow wave ~ 5.0 very fast wave
 //#define NL_EXTRA_PLANTS_WAVE // [toggle] !dont use! wave using texture coords (1.21.0 vanilla 2048x1024)
@@ -123,14 +123,14 @@
 #define NL_CLOUD1_DENSITY 0.8             // 0.1 less clouds ~ 0.8 more clouds
 #define NL_CLOUD1_OPACITY 0.9              // 0.0 invisible ~ 1.0 opaque
 
-/* Rounded cloud Settings */ 
-#define NL_CLOUD2_THICKNESS 2.8      // 0.5 slim ~ 5.0 fat
-#define NL_CLOUD2_RAIN_THICKNESS 3.3 // 0.5 slim ~ 5.0 fat
+/* Rounded cloud Settings */
+#define NL_CLOUD2_THICKNESS 2.5      // 0.5 slim ~ 5.0 fat
+#define NL_CLOUD2_RAIN_THICKNESS 2.5 // 0.5 slim ~ 5.0 fat
 #define NL_CLOUD2_STEPS 5            // 3 low quality ~ 16 high quality
-#define NL_CLOUD2_SCALE 0.027        // 0.003 large ~ 0.3 tiny
-#define NL_CLOUD2_SHAPE 0.66          // 0.0 round ~ 1.0 box
-#define NL_CLOUD2_DENSITY 24.0       // 1.0 blurry ~ 100.0 sharp
-#define NL_CLOUD2_VELOCITY 2.6       // 0.0 static ~ 4.0 very fast
+#define NL_CLOUD2_SCALE 0.037        // 0.003 large ~ 0.3 tiny
+#define NL_CLOUD2_SHAPE 0.5          // 0.0 round ~ 1.0 box
+#define NL_CLOUD2_DENSITY 25.0       // 1.0 blurry ~ 100.0 sharp
+#define NL_CLOUD2_VELOCITY 1.7       // 0.0 static ~ 4.0 very fast
 //#define NL_CLOUD2_MULTILAYER       // [toggle] extra cloud layer
 
 /* Aurora settings */ 
@@ -149,10 +149,10 @@
 #define NL_SUNMOON_SIZE 1.4     // 0.3 tiny ~ 4.0 massive
 
 /* Fake godrays during sunrise/sunset */
-#define NL_GODRAY 0.5 // [toggle] 0.1 subtle ~ 0.8 strong
+//#define NL_GODRAY 0.5 // [toggle] 0.1 subtle ~ 0.8 strong
 
 /* Sky reflection */ 
-//#define NL_GROUND_REFL 0.4       // [toggle] 0.2 slightly reflective ~ 1.0 fully reflect sky 
+//#define NL_GROUND_REFL 0.2       // [toggle] 0.2 slightly reflective ~ 1.0 fully reflect sky 
 #define NL_GROUND_RAIN_WETNESS 1.0 // 0.0 no wetness ~ 1.0 fully wet blocks when raining
 #define NL_GROUND_RAIN_PUDDLES 0.7 // 0.0 no puddles ~ 1.0 puddles
 //#define NL_GROUND_AURORA_REFL    // [toggle] aurora reflection on ground
@@ -209,5 +209,5 @@
   #undef NL_RAINBOW
   #define NL_RAINBOW
 #endif
-
+  
 #endif 
