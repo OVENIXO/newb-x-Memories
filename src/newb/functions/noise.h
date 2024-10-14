@@ -5,7 +5,7 @@
 
 // hash function for noise (for highp only)
 highp float rand(highp vec2 n) {
-  return fract(sin(dot(n, vec2(12.9898, 4.1414))) * 43758.5453);
+  return fract(sin(dot(n, vec2(23.61, 78.32))) * 93.73);
 }
 
 // rand with transition

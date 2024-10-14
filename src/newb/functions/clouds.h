@@ -31,9 +31,9 @@ vec4 renderCloudsSimple(vec3 pos, highp float t, float rain, vec3 zenithCol, vec
   vec4 color = vec4(0.02,0.04,0.05,cloudAlpha);
 
   color.rgb += horizonEdgeCol;
-  color.rgb *= 1.0 - 0.5*cloudShadow*step(0.0, pos.y);
+  color.rgb *= 1.0 - 0.9*cloudShadow*step(0.0, pos.y);
 
-  color.rgb += zenithCol*0.7;
+  color.rgb += zenithCol*1.0;
   color.rgb *= 1.0 - 0.4*rain;
 
   return color;
@@ -47,7 +47,7 @@ float cloudDf(vec3 pos, float rain) {
   vec2 u = smoothstep(0.999*NL_CLOUD2_SHAPE, 1.0, pos.xz-p0);
   
   // rain transition
-  vec2 t = vec2(0.1001+0.2*rain, 0.1+0.2*rain*rain);
+  vec2 t = vec2(0.1001+0.2*rain, 0.0999+0.2*rain*rain);
 
   float n = mix(
     mix(randt(p0, t),randt(p0+vec2(1.0,0.0), t), u.x),
@@ -56,7 +56,7 @@ float cloudDf(vec3 pos, float rain) {
   );
 	
   // round y
-  float b = 1.0 - 1.9*smoothstep(NL_CLOUD2_SHAPE, 2.0 - NL_CLOUD2_SHAPE, 2.0*abs(pos.y-0.5));
+  float b = 0.5 - 1.9*smoothstep(NL_CLOUD2_SHAPE, 2.0 - NL_CLOUD2_SHAPE, 2.0*abs(pos.y-0.5));
   return smoothstep(0.2, 1.0, n * b);
 }
 

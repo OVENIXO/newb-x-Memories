@@ -3,5 +3,6 @@
 
 #define NL_CONST_PI_HALF 1.570796
 #define NL_CONST_PI_QUART 0.785398
+#define NL_CONST_SHADOW_EDGE 0.93
 
 #endif
