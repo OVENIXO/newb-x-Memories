@@ -1,5 +1,5 @@
-name = "Newb X Memories: build 4.0"
-version = [0, 4, 0]
+name = "Newb X Memories : build 5.0"
+version = [0, 5, 0]
 min_supported_mc_version = [1, 21, 20]
 description = '''
 §c%w
@@ -27,47 +27,73 @@ credits = '''
 define = "RAINBOW"
 materials = ["Sky"]
 description = '''
-Enable §bRainbow§f for §nNewB X Memories§f §l- §bRestart for the best experience
+Enable §bRainbow§f
+- for more beautiful looking §nNewB X Memories§f 
+§l- §bRestart for the best experience
+'''
+
+[[subpack]]
+define = "NO_CLOUDS"
+materials = ["Clouds"]
+description = '''
+No Clouds
+- disable clouds for no lag 
+- (§emost Lowest§f) Settings for §nNewB X Memories§f
+§l- §bRestart for the best experience
 '''
 
 [[subpack]]
 define = "SOFT_CLOUDS"
 materials = ["Clouds"]
 description = '''
-Soft Cloud Aurora Reflection (§eLowest§f) Settings for §nNewB X Memories§f §l- §bRestart for the best experience
+Soft Cloud
+- Aurora Reflection
+- (§eLowest§f) Settings for §nNewB X Memories§f
+§l- §bRestart for the best experience
 '''
 
 [[subpack]]
 define = "BRIGHT_BLUE_SKY"
 materials = ["Clouds" , "EndSky" ,"LegacyCubemap" ,"RenderChunk" , "Sky"]
 description = '''
-Bright Blue Sky All Features Default (§6Medium§f) Change Night sky to more §bbright§f Extension for §nNewB X Memories§f §l- §bRestart for the best experience!
+Bright Blue Sky
+-All Features Default
+-(§6Medium§f) Change Night sky to more §bbright§f Extension for §nNewB X Memories§f
+-§l- §bRestart for the best experience!
 '''
 
 [[subpack]]
 define = "BLINKING_TORCH"
 materials = ["RenderChunk"]
 description = '''
-Toggle Blinking §6Torch§f Blinking §6Torch§f Feature Settings for §nNewB X Memories§f §l- §bRestart for the best experience!
+Toggle Blinking §6Torch§f
+- Blinking §6Torch§f Feature Settings for §nNewB X Memories§f
+- §l- §bRestart for the best experience!
 '''
 
 [[subpack]]
 define = "VANILLA_WATER_STYLE"
 materials = ["RenderChunk"]
 description = '''
-§bVANILLA WATER STYLE §f- Change the water to vanilla enchanced looks Settings for §nNewB X Memories§f §l- §bRestart for the best experience!
+§bVANILLA WATER STYLE §f
+- Change the water to vanilla enchanced looks Settings for §nNewB X Memories§f
+§l- §bRestart for the best experience!
 '''
 
 [[subpack]]
 define = "CLOUDS_EXTENSION"
 materials = ["Clouds" , "LegacyCubemap"]
 description = '''
-§bRounded Clouds Extension§f Subpack Summary §cEnable Multilayer Rounded Clouds§f §4(Cost lot performance)§f §6High Settings §ffor §nNewB X Memories§f §l- §bRestart for the best experience!
+§bRounded Clouds Extension§f
+- Subpack Summary §cEnable Multilayer Rounded Clouds§f
+- §4(Cost lot performance)§f §6High Settings §ffor §nNewB X Memories§f
+§l- §bRestart for the best experience!
 '''
 
 [[subpack]]
 define = "DEFAULT"
 materials = []
 description = '''
-§lDefault Settings for NEWB X MEMORIES§f
+DEFAULT 
+- §lDefault Settings for NEWB X MEMORIES§f
 '''
